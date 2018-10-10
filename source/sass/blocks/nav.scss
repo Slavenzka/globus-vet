@@ -1,0 +1,242 @@
+.nav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-top: 32px;
+  width: 100% * 813 / 978;
+}
+
+.nav__toggle {
+  display: none;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+}
+
+.nav__item {
+  display: block;
+}
+
+.nav__item--about {
+  margin-left: -33px;
+}
+
+.nav__link,
+.nav__item--catalogue {
+  position: relative;
+  display: block;
+  padding-bottom: 18px;
+  font-family: $font-family__main;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $font-color__main;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+}
+
+.nav__item--catalogue {
+  padding-right: 24px;
+  padding-bottom: 0;
+}
+
+.nav__submenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150%;
+  background-color: transparent;
+}
+
+.nav__item--catalogue:hover .nav__submenu {
+  display: block;
+}
+
+.nav__item:not(.nav__item--catalogue):hover .nav__link {
+  color: $font-color__nav--hover;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: calc(50% - 76%);
+    width: 152%;
+    height: 4px;
+    background-color: $background-color__highlight;
+  }
+}
+
+.nav__icon {
+  display: inline-block;
+  margin-top: 7px;
+  margin-left: 6px;
+  vertical-align: top;
+  pointer-events: none;
+}
+
+@media (max-width: $width__tablet-only) {
+  .nav {
+    order: 2;
+    padding-top: 10px;
+    width: 100%;
+  }
+}
+
+@media (max-width: $width__mobile-only) {
+  .nav {
+    padding-top: 0;
+  }
+
+  .nav__toggle {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: calc(50% - 140px);
+    font-size: 0;
+    background-color: transparent;
+    border: none;
+  }
+
+  .header-main__nav--nojs .nav__toggle {
+    display: none;
+  }
+
+  .header-main__nav--closed .nav__list {
+    display: none;
+  }
+
+  .header-main__nav--opened .nav__list,
+  .header-main__nav--nojs .nav__list {
+    display: flex;
+  }
+
+  .header-main__nav--closed .nav__toggle {
+    width: 20px;
+    height: 14px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 2px;
+      width: 20px;
+      background-color: rgb(35, 31, 32);
+      box-shadow:
+        0 6px 0 0 rgb(35, 31, 32),
+        0 12px 0 0 rgb(35, 31, 32);
+    }
+  }
+
+  .header-main__nav--opened .nav__toggle {
+    width: 21px;
+    height: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 2px;
+      height: 2px;
+      width: 21px * 1.3;
+      background-color: rgb(35, 31, 32);
+      transform-origin: 0 0;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      height: 2px;
+      width: 21px * 1.3;
+      background-color: rgb(35, 31, 32);
+      transform-origin: 0 0;
+      transform: rotate(-45deg);
+    }
+  }
+
+  .nav__list {
+    margin-top: 10px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav__submenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 15px;
+    width: 100%;
+    height: 150%;
+    background-color: transparent;
+  }
+
+  .nav__item--catalogue:hover .nav__submenu {
+    display: block;
+    position: static;
+    width: 100%;
+  }
+
+  .nav__item {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav__item:not(:last-of-type) {
+    &::before {
+      content: "";
+      position: absolute;
+      left: -50vw;
+      bottom: 0;
+      width: 150vw;
+      height: 1px;
+      background-color: $border-color__main;
+    }
+  }
+
+  .nav__link {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav__item--catalogue {
+    padding-left: 0;
+    padding-bottom: 18px;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .nav__item--about {
+    margin-left: 0;
+  }
+
+  .nav__item:hover .nav__link {
+    &::before {
+      display: none;
+    }
+  }
+
+  .nav__icon {
+    position: absolute;
+    right: calc(50% - 70px);
+  }
+}

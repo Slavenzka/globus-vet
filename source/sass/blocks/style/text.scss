@@ -1,0 +1,497 @@
+.text {
+  padding-top: 9px;
+  font-family: $font-family__main;
+}
+
+.text__title {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  color: $font-color__main;
+}
+
+.text__frame-top {
+  margin-top: 23px;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.text__img-top {
+  margin-top: -261px;
+  margin-left: -13px;
+}
+
+.text__intro {
+  position: relative;
+  margin-top: 52px;
+  padding-right: 166px;
+  padding-left: 166px;
+}
+
+.text__date {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 32px;
+  color: $font-color__highlight;
+  text-transform: uppercase;
+}
+
+.text__intro-block {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.text__intro-block:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.text__main {
+  padding-top: 60px;
+}
+
+.text__heading {
+  margin: 0;
+  margin-bottom: 21px;
+  padding-right: 166px;
+  padding-left: 166px;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 32px;
+  color: $font-color__main;
+}
+
+.text__content {
+  margin: 0;
+  padding-right: 166px;
+  padding-left: 166px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $font-color__main;
+}
+
+.text__content:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.text__illustration-big {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 31px;
+}
+
+.text__frame-mid {
+  margin: 44px auto 19px auto;
+  width: 100% * 810 / 978;
+  height: 400px;
+  overflow: hidden;
+}
+
+.text__img-mid {
+  margin-top: -72px;
+  margin-left: -45px;
+}
+
+.text__frame-mid + figcaption {
+  margin-left: -3px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.4;
+}
+
+.text__review {
+  position: relative;
+  margin: 0;
+  margin-top: 132px;
+  padding: 0 168px 26px 168px;
+}
+
+.text__review p {
+  margin: 0;
+  font-family: $font-family__main;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
+  color: $font-color__main;
+}
+
+.text__review p:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.text__review-author {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding-top: 41px;
+  padding-bottom: 40px;
+  padding-left: 85px;
+  font-family: $font-family__main;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  color: $font-color__main;
+  font-style: normal;
+}
+
+.text__review-company {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $font-color__highlight;
+  text-transform: uppercase;
+}
+
+.text__review-avatar {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.text__review-avatar img {
+  margin-top: -14px;
+  margin-left: 5px;
+}
+
+.text__review-icon {
+  position: absolute;
+  top: -78px;
+  left: 168px;
+}
+
+.text__kudos {
+  position: relative;
+  margin: 54px auto 54px auto;
+  padding-top: 23px;
+  padding-right: 20px;
+  padding-bottom: 22px;
+  padding-left: 50px;
+  width: 100% * 642 / 978;
+  font-family: $font-family__main;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
+  color: $font-color__main;
+  background-color: $background-color__dark;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 100%;
+    background-color: $background-color__highlight;
+  }
+}
+
+.text__conclusion {
+  margin-top: 46px;
+  padding-bottom: 44px;
+  border-bottom: 1px solid $border-color__input;
+}
+
+.text__frame-small {
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 54px;
+  width: 474px;
+  height: 340px;
+  overflow: hidden;
+}
+
+.text__img-small {
+  margin-top: -58px;
+  margin-left: -189px;
+}
+
+.text__subheading {
+  display: inline-block;
+  margin: 0;
+  margin-top: 37px;
+  margin-bottom: 20px;
+  max-width: 305px;
+  font-family: $font-family__main;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $font-color__main;
+  vertical-align: middle;
+}
+
+.text__annex {
+  padding-top: 42px;
+  padding-bottom: 42px;
+  border-bottom: 1px solid $border-color__input;
+}
+
+.text__annex-content {
+  margin: 0;
+  font-family: $font-family__main;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  color: $font-color__main;
+}
+
+.text__annex-content:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+@media (max-width: $width__tablet-only) {
+  .text__title {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .text__frame-top {
+    height: 300px;
+  }
+
+  .text__intro {
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 120px;
+    width: 708px;
+  }
+
+  .text__intro-block {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .text__main {
+    padding-top: 30px;
+  }
+
+  .text__heading {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 20px;
+    padding-left: 120px;
+    width: 708px;
+    font-size: 35px;
+    line-height: 27px;
+  }
+
+  .text__content {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 20px;
+    padding-left: 120px;
+    width: 708px;
+  }
+
+  .text__frame-mid {
+    margin: 25px auto 19px auto;
+    width: 708px;
+  }
+
+  .text__review {
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 20px 26px 120px;
+    width: 708px;
+  }
+
+  .text__review p {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .text__review-icon {
+    left: 120px;
+  }
+
+  .text__kudos {
+    margin: 25px auto 25px auto;
+    padding-right: 20px;
+    padding-left: 120px;
+    width: 708px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .text__conclusion {
+    margin-top: 20px;
+    padding-bottom: 44px;
+  }
+
+  .text__frame-small {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 54px;
+    width: 474px;
+    height: 340px;
+    overflow: hidden;
+  }
+
+  .text__subheading {
+    display: block;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 120px;
+    width: 708px;
+    max-width: 768px;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: left;
+  }
+
+  .text__annex {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .text__annex-content {
+    margin: 0 auto;
+    width: 708px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: $width__mobile-only) {
+  .text__title {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .text__date {
+    position: static;
+  }
+
+  .text__frame-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+  }
+
+  .text__intro {
+    margin-top: 40px;
+    padding-right: 0;
+    padding-left: 0;
+    width: 290px;
+  }
+
+  .text__intro-block {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .text__main {
+    padding-top: 30px;
+  }
+
+  .text__heading {
+    padding-right: 0;
+    padding-left: 0;
+    width: 290px;
+    font-size: 27px;
+    line-height: 29px;
+  }
+
+  .text__content {
+    padding-right: 0;
+    padding-left: 0;
+    width: 290px;
+  }
+
+  .text__frame-mid {
+    display: flex;
+    justify-content: center;
+    margin: 25px auto 19px auto;
+    width: 290px;
+  }
+
+  .text__review {
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 0 26px 0;
+    width: 290px;
+  }
+
+  .text__review p {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .text__review-icon {
+    left: 120px;
+  }
+
+  .text__kudos {
+    margin: 25px auto 25px auto;
+    padding-right: 20px;
+    padding-left: 30px;
+    width: 290px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .text__conclusion {
+    margin-top: 20px;
+    padding-bottom: 44px;
+  }
+
+  .text__frame-small {
+    float: none;
+    margin-bottom: 54px;
+    width: 290px;
+    height: 340px;
+    overflow: hidden;
+  }
+
+  .text__subheading {
+    display: block;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+    padding-right: 0;
+    padding-left: 0;
+    width: 290px;
+    max-width: 290px;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: left;
+  }
+
+  .text__annex {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .text__annex-content {
+    width: 290px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+}

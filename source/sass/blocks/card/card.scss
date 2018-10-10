@@ -1,0 +1,47 @@
+.card {
+  border-bottom: 1px solid $border-color__main;
+}
+
+.card > .container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  font-family: $font-family__main;
+}
+
+.card__images {
+  width: 100% * 474 / 978;
+}
+
+.card__info {
+  width: 100% * 474 / 978;
+}
+
+@media (max-width: $width__tablet-only) {
+  .card > .container {
+    padding-bottom: 30px;
+  }
+
+  .card__images {
+    width: 60%;
+  }
+
+  .card__info {
+    width: 40%;
+  }
+}
+
+@media (max-width: $width__mobile-only) {
+  .card > .container {
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+  }
+
+  .card__images {
+    width: 100%;
+  }
+
+  .card__info {
+    width: 100%;
+  }
+}

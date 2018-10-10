@@ -1,0 +1,154 @@
+.partners {
+  font-family: $font-family__main;
+  overflow: hidden;
+}
+
+.partners > .container {
+  padding-top: 49px;
+  padding-bottom: 82px;
+  background-image: url("../img/non-content/partners__background-piece@1x.png");
+  background-size: 207px 342px;
+  background-repeat: no-repeat;
+  background-position: 100px 337px;
+
+  @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
+    background-image: url("../img/non-content/partners__background-piece@2x.png");
+  }
+}
+
+.partners__slogan {
+  margin: 0;
+  margin-left: 2px;
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 55px;
+  color: $font-color__main;
+  text-align: center;
+}
+
+.partners__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-top: 50px;
+  padding: 0;
+  list-style: none;
+}
+
+.partners__item {
+  width: 138px;
+  height: 138px;
+  border-radius: 50%;
+  background-color: $background-color__main;
+  box-shadow: 0 15px 30px 0 $shadow-color__partners-item;
+  overflow: hidden;
+}
+
+.partners__item--gierth .partners__logo {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.partners__item--abaxis .partners__logo {
+  margin-top: 48px;
+  margin-left: 13px;
+}
+
+.partners__item--cardio .partners__logo {
+  margin-top: 28px;
+  margin-left: 28px;
+}
+
+.partners__item--scil .partners__logo {
+  margin-top: 28px;
+  margin-left: 20px;
+}
+
+.partners__item--cannon .partners__logo {
+  margin-top: 3px;
+  margin-left: 3px;
+}
+
+.partners__item--samsung .partners__logo {
+  margin-top: 58px;
+  margin-left: 10px;
+}
+
+@media (max-width: 1037px) {
+  .partners > .container {
+    padding-top: 39px;
+    padding-bottom: 50px;
+    background-image: none;
+  }
+
+  .partners__slogan {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .partners__item {
+    width: 110px;
+    height: 110px;
+  }
+
+  .partners__item--gierth .partners__logo {
+    margin-top: 5px;
+    margin-left: 1px;
+    transform: scale(0.9);
+  }
+
+  .partners__item--abaxis .partners__logo {
+    margin-top: 40px;
+    margin-left: 0;
+    transform: scale(0.8);
+  }
+
+  .partners__item--cardio .partners__logo {
+    margin-top: 18px;
+    margin-left: 18px;
+    transform: scale(0.9);
+  }
+
+  .partners__item--scil .partners__logo {
+    margin-top: 18px;
+    margin-left: 8px;
+    transform: scale(0.9);
+  }
+
+  .partners__item--cannon .partners__logo {
+    margin-top: -10px;
+    margin-left: -11px;
+    transform: scale(0.8);
+  }
+
+  .partners__item--samsung .partners__logo {
+    margin-top: 48px;
+    margin-left: -3px;
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: $width__mobile-only) {
+  .partners > .container {
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+
+  .partners__slogan {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .partners__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  .partners__item {
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}

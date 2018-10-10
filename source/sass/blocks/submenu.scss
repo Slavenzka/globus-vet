@@ -1,0 +1,28 @@
+.submenu__list {
+  margin: 0;
+  padding: 20px 0;
+  position: absolute;
+  top: 36px;
+  font-size: 18px;
+  line-height: 18px;
+  background-color: $background-color__dark;
+  list-style: none;
+  z-index: 20;
+}
+
+.submenu__link {
+  display: block;
+  padding: 15px 20px;
+  color: $font-color__main;
+}
+
+.submenu__item:hover {
+  background-color: $background-color__submenu--hover;
+}
+
+@media (max-width: $width__mobile-only) {
+  .submenu__list {
+    position: static;
+    width: 100%;
+  }
+}

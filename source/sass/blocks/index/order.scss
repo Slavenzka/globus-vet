@@ -1,0 +1,144 @@
+.order {
+  position: relative;
+  font-family: $font-family__main;
+  background-color: $background-color__dark;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -57px;
+    left: calc(50% - 519px - 115px);
+    width: 580px;
+    height: 419px;
+    background-image: url("../img/non-content/order__background-image@1x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 0;
+  }
+}
+
+.order > .container {
+  padding-top: 43px;
+  padding-left: 447px;
+  padding-bottom: 50px;
+}
+
+.order__slogan {
+  position: relative;
+  margin: 0;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 45px;
+  color: $font-color__main;
+}
+
+.order__instruction {
+  position: relative;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 36px;
+  margin-left: 3px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $font-color__main;
+}
+
+.order__email,
+.order__phone {
+  position: relative;
+  padding: 9px 13px 5px 13px;
+  width: 187px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: $font-color__main;
+  border: 1px solid $border-color__input;
+}
+
+.order__email {
+  margin-left: 3px;
+}
+
+.order__phone {
+  margin-left: 7px;
+}
+
+.order__button {
+  margin-left: 6px;
+  padding: 8px 13.7px 8px 16px;
+}
+
+.order__email::placeholder,
+.order__phone::placeholder {
+  font-family: $font-family__main;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: $font-color__placeholder;
+}
+
+@media all and (-ms-high-contrast: none) {
+  .order__email:-ms-input-placeholder,
+  .order__phone:-ms-input-placeholder {
+    font-family: $font-family__main;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: $font-color__placeholder;
+  }
+
+  .order__button {
+    margin-left: 4px;
+    padding: 8px 13.5px 8px 16px;
+  }
+}
+
+@media (max-width: 1037px) {
+  .order {
+    &::before {
+      background-image: none;
+    }
+  }
+
+  .order > .container {
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  .order__slogan {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .order__instruction {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 3px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: $width__mobile-only) {
+  .order > .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .order__email,
+  .order__phone {
+    display: block;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .order__button {
+    margin-left: 0;
+  }
+}

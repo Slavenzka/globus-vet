@@ -1,0 +1,53 @@
+$width-min__desktop: 1038px;
+$width__tablet-only: 1037px;
+$width-min__tablet: 768px;
+$width__mobile-only: 767px;
+$width-min__mobile: 320px;
+
+$font-family__main: "Futura", "Arial", sans-serif;
+
+$font-color__main: rgb(0, 0, 0);
+$font-color__light: rgb(255, 255, 255);
+$font-color__highlight: rgb(170, 36, 46);
+$font-color__nav--hover: rgb(160, 160, 160);
+$font-color__monitoring-catalog: rgb(254, 254, 254);
+$font-color__xray--light: rgb(255, 255, 255);
+$font-color__xray-catalog: rgb(209, 35, 48);
+$font-color__placeholder: rgba(0, 0, 0, 0.5);
+$font-color__documents-price: rgb(167, 167, 167);
+
+$background-color__main: rgb(255, 255, 255);
+$background-color__dark: rgb(237, 230, 223);
+$background-color__submenu--hover: rgb(240, 215, 189);
+$background-color__highlight: rgb(170, 36, 46);
+$background-color__xray: rgb(77, 77, 77);
+$background-color__reviews-indicator: rgb(204, 198, 190);
+$background-color__license: rgb(0, 0, 0);
+$background-color__breadcrumbs-dots: rgb(231, 231, 232);
+$background-color__info: rgb(231, 231, 232);
+$background-color__mark: rgb(252, 233, 128);
+
+$border-color__main: rgb(237, 230, 223);
+$border-color__highlight: rgb(170, 36, 46);
+$border-color__video-link: rgb(170, 36, 46);
+$border-color__xray-control: rgb(255, 255, 255);
+$border-color__input: rgb(204, 198, 190);
+$border-color__dark: rgb(243, 239, 234);
+$border-color__light: rgb(249, 246, 244);
+$border-color__images: rgb(231, 231, 232);
+
+$icon-color__light: rgb(255, 255, 255);
+$icon-color__highlight: rgb(170, 36, 46);
+$icon-color__xray: rgb(209, 35, 48);
+$icon-color__events-arrow: rgb(204, 198, 190);
+
+
+$shadow-color__revies-wrapper: rgba(124, 121, 118, 0.2);
+$shadow-color__partners-item: rgba(207, 216, 229, 0.79);
+$shadow-color__device: rgba(0, 0, 0, 0.15);
+$shadow-color__catalog: rgba(207, 216, 229, 0.69);
+$shadow-color__catalog--hover: rgba(159, 167, 180, 0.69);
+$shadow-color__contacts: rgba(207, 216, 229, 0.69);
+
+$retina__dpi: 144dpi;
+$retina__dppx: 1.5dppx;

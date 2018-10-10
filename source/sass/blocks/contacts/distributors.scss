@@ -1,0 +1,40 @@
+.distributors {
+  margin-top: 61px;
+  padding-bottom: 50px;
+  font-family: $font-family__main;
+  overflow: hidden;
+}
+
+.distributors__title {
+  margin: 0;
+  margin-left: -2px;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 45px;
+  color: $font-color__main;
+}
+
+.distributors__list {
+  margin-top: 21px;
+}
+
+.distributors__item {
+  height: 352px;
+}
+
+.distributors__address {
+  margin-top: 2px;
+}
+
+.distributors__phone-list {
+  margin-top: 11px;
+}
+
+@media (max-width: $width__tablet-only) {
+  .distributors {
+    margin-top: 10px;
+    padding-bottom: 30px;
+    font-family: $font-family__main;
+    overflow: hidden;
+  }
+}

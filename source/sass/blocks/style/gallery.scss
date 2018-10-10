@@ -1,0 +1,150 @@
+.gallery {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 54px;
+  height: 473px;
+  width: 642px;
+}
+
+.gallery__large {
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 3px;
+  width: 642px;
+  height: 370px;
+  background-color: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.gallery__wrapper {
+  position: relative;
+  width: 642px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.gallery__image-large {
+  margin-top: 0;
+  margin-left: 0;
+  width: 100%;
+  object-fit: fill;
+}
+
+.gallery__list {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  width: 643px * 15;
+  height: 100px;
+  font-size: 0;
+  line-height: 0;
+  list-style: none;
+  transition-duration: 0.5s;
+  overflow: hidden;
+}
+
+.gallery__item--selected {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: $background-color__highlight;
+  }
+}
+
+.gallery__item {
+  display: inline-block;
+  width: 158px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.gallery__image {
+  width: 100%;
+}
+
+.gallery__item:not(:nth-of-type(4n + 5)):not(:first-of-type) {
+  margin-left: 4px;
+}
+
+.gallery__btn {
+  position: absolute;
+  bottom: 123px;
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+  background-color: $background-color__highlight;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.gallery__btn--blocked {
+  pointer-events: none;
+  opacity: 0.5;
+  cursor: auto;
+}
+
+.gallery__btn--prev {
+  left: calc(50% - 301px);
+}
+
+.gallery__btn--next {
+  right: calc(50% - 301px);
+}
+
+.gallery__icon {
+  position: absolute;
+  top: 11px;
+  fill: $icon-color__light;
+}
+
+.gallery__btn--prev .gallery__icon {
+  left: 10px;
+}
+
+.gallery__btn--next .gallery__icon {
+  transform: rotate(180deg);
+  right: 11px;
+}
+
+.gallery__counter {
+  position: absolute;
+  top: -2px;
+  left: -85px;
+  font-family: $font-family__main;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $font-color__main;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 1px;
+    width: 138px;
+    height: 2px;
+    background-color: $background-color__highlight;
+  }
+}
+
+.gallery__counter span {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+@media (max-width: $width__mobile-only) {
+  .gallery,
+  .comments {
+    display: none;
+  }
+}

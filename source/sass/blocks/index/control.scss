@@ -1,0 +1,49 @@
+.control__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.control__item {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  font-size: 0;
+}
+
+.control__item:not(:first-of-type) {
+  margin-left: 10px;
+}
+
+.control__input {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  overflow: hidden;
+  border: 0;
+  outline: 0;
+  opacity: 0;
+}
+
+.control__input + label {
+  font-size: 0;
+}
+
+.control__input + label::before {
+  content: "";
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  border: 2px solid $border-color__xray-control;
+}
+
+.control__input:checked + label::before {
+  background-color: $background-color__highlight;
+  border: 2px solid $background-color__highlight;
+}

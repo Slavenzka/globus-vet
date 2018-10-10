@@ -1,0 +1,89 @@
+.header-main {
+  width: 100%;
+  border-bottom: 1px solid $border-color__main;
+}
+
+.header-main .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: $font-family__main;
+}
+
+.header-main__link {
+  width: 50%;
+  overflow: hidden;
+}
+
+.header-main__contacts {
+  padding-top: 24px;
+  width: 50%;
+  font-size: 21px;
+  font-weight: 400;
+  color: $font-color__main;
+  letter-spacing: 0.35px;
+  text-align: right;
+}
+
+.header-main__mail {
+  color: $font-color__main;
+}
+
+.header-main__phone {
+  position: relative;
+  margin: 0;
+  margin-top: 11px;
+  font-size: 23px;
+  letter-spacing: 1.4px;
+
+  &::before {
+    content: "Звонок по России";
+    position: absolute;
+    top: 34px;
+    right: 0;
+    font-family: inherit;
+    font-size: 14px;
+    color: $font-color__highlight;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+  }
+}
+
+@media (max-width: $width__tablet-only) {
+  .header-main__logo {
+    width: 40%;
+  }
+
+  .header-main__contacts {
+    width: 60%;
+    font-size: 20px;
+    letter-spacing: 0.35px;
+  }
+
+  .header-main__phone {
+    margin-top: 11px;
+    font-size: 23px;
+    letter-spacing: 0.5px;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $width__mobile-only) {
+  .header-main .container {
+    overflow: hidden;
+  }
+
+  .header-main__logo {
+    width: 100%;
+  }
+
+  .header-main__contacts {
+    width: 100%;
+    font-size: 20px;
+    letter-spacing: 0.35px;
+    text-align: center;
+  }
+}

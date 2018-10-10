@@ -1,0 +1,120 @@
+.small {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.small__list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.small__item {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 380px;
+  transition-property: opacity;
+  transition-duration: 0.8s;
+  opacity: 0;
+}
+
+.small__item--2 {
+  background-color: rgba(0, 0, 0, 0.2);
+  background-image: url("../img/non-content/promotion__monitoring-background@1x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
+    background-image: url("../img/non-content/promotion__monitoring-background@2x.jpg");
+  }
+}
+
+.small__item--1 {
+  background-color: rgba(200, 50, 50, 0.4);
+}
+
+.small__item--3 {
+  background-color: rgba(100, 100, 0, 0.4);
+}
+
+.small__item--4 {
+  background-color: rgba(100, 0, 100, 0.4);
+}
+
+.small__title {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 42px;
+  color: $font-color__main;
+  letter-spacing: 1.6px;
+}
+
+.small__link {
+  display: block;
+  padding-top: 43px;
+  padding-right: 47px;
+  padding-left: 47px;
+}
+
+.small__link > span {
+  display: flex;
+  margin-left: 1px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 60px;
+  color: $font-color__monitoring-catalog;
+  letter-spacing: 1px;
+}
+
+.small__icon {
+  margin-top: 25px;
+  margin-left: 8px;
+}
+
+.small__icon use {
+  fill: $icon-color__light;
+}
+
+.small__img {
+  margin-top: 18px;
+  margin-left: -115px;
+  width: 483px;
+  height: 474px;
+}
+
+@media (max-width: $width__tablet-only) {
+  .small__title {
+    letter-spacing: 0;
+  }
+}
+
+@media (max-width: $width__mobile-only) {
+  .small__link {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+  }
+
+  .small__title {
+    font-size: 25px;
+    line-height: 27px;
+  }
+
+  .small__link > span {
+    margin-left: 0;
+    font-size: 20px;
+    line-height: 56px;
+    letter-spacing: 0.5px;
+  }
+
+  .small__img {
+    display: none;
+  }
+}
