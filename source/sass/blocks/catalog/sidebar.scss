@@ -5,6 +5,7 @@
 .sidebar__list {
   margin: 0;
   padding: 0;
+  max-width: 230px;
   list-style: none;
 }
 
@@ -23,8 +24,8 @@
 
 .sidebar__item--active .sidebar__link {
   position: relative;
-  padding-right: 21px;
-  padding-left: 21px;
+  padding-right: 19px;
+  padding-left: 10px;
   font-weight: 700;
   background-color: $background-color__dark;
 
@@ -52,6 +53,22 @@
     border-right: 6px solid $background-color__main;
     border-bottom: 11px solid $background-color__main;
     border-left: 6px solid transparent;
+  }
+}
+
+.sidebar__item--double.sidebar__item--active .sidebar__link {
+  &::before {
+    height: 100%;
+    border: none;
+    background-image: linear-gradient(259deg, $background-color__main 0%, $background-color__main 50%, transparent 50%, transparent 100%);
+    background-size: cover;
+  }
+
+  &::after {
+    height: 100%;
+    border: none;
+    background-image: linear-gradient(281deg, $background-color__main 0%, $background-color__main 50%, transparent 50%, transparent 100%);
+    background-size: cover;
   }
 }
 
