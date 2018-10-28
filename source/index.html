@@ -9,6 +9,7 @@
   <link rel="preload" href="css/normalize.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="css/normalize.min.css"></noscript>
   <link rel="preload" href="fonts/FuturaPTBook.woff2" as="font">
+  <link rel="stylesheet" href="plugins/slick/slick.css"/>
 </head>
 
 <body>
@@ -166,26 +167,6 @@
       </h2>
       <div class="container">
         <div class="promotion__wrapper">
-          <div class="promotion__control control">
-            <ul class="control__list">
-              <li class="control__item control__item--1">
-                <input type="radio" class="control__input" id="element1" value="1" name="indicator">
-                <label for="element1">Страница 1</label>
-              </li>
-              <li class="control__item control__item--2">
-                <input type="radio" class="control__input" id="element2" value="2" name="indicator" checked>
-                <label for="element2">Страница 2</label>
-              </li>
-              <li class="control__item control__item--3">
-                <input type="radio" class="control__input" id="element3" value="3" name="indicator">
-                <label for="element3">Страница 3</label>
-              </li>
-              <li class="control__item control__item--4">
-                <input type="radio" class="control__input" id="element4" value="4" name="indicator">
-                <label for="element4">Страница 4</label>
-              </li>
-            </ul>
-          </div>
           <div class="promotion__video video">
             <p class="video__slogan">
               Подберём лучшее ветеринарное оборудование
@@ -372,14 +353,8 @@
         <p class="reviews__slogan">
           Мы уверены, что вы тоже оставите положительный отзыв о нашей работе!
         </p>
-        <button class="reviews__control reviews__control--prev" type="button">
-          Предыдущий отзыв
-          <svg class="reviews__icon" width="44" height="18" viewbox="0 0 44 18">
-            <use xlink:href="#revies__arrow"></use>
-          </svg>
-        </button>
         <ul class="reviews__list">
-          <li class="reviews__item reviews__item--previous">
+          <li class="reviews__item">
             <div class="reviews__frame reviews__frame--photo">
               <picture>
                 <source type="image/webp" srcset="img/reviews__photo@1x.webp 1x, img/reviews__photo@2x.webp 2x">
@@ -407,7 +382,7 @@
               </span>
             </cite>
           </li>
-          <li class="reviews__item reviews__item--selected">
+          <li class="reviews__item">
             <div class="reviews__frame reviews__frame--photo">
               <picture>
                 <source type="image/webp" srcset="img/reviews__photo@1x.webp 1x, img/reviews__photo@2x.webp 2x">
@@ -435,7 +410,7 @@
               </span>
             </cite>
           </li>
-          <li class="reviews__item reviews__item--next">
+          <li class="reviews__item">
             <div class="reviews__frame reviews__frame--photo">
               <picture>
                 <source type="image/webp" srcset="img/reviews__photo@1x.webp 1x, img/reviews__photo@2x.webp 2x">
@@ -460,7 +435,7 @@
               </span>
             </cite>
           </li>
-          <li class="reviews__item reviews__item--next">
+          <li class="reviews__item">
             <div class="reviews__frame reviews__frame--photo">
               <picture>
                 <source type="image/webp" srcset="img/reviews__photo@1x.webp 1x, img/reviews__photo@2x.webp 2x">
@@ -487,30 +462,6 @@
                 Организация №4
               </span>
             </cite>
-          </li>
-        </ul>
-        <button class="reviews__control reviews__control--next" type="button">
-          Следующий отзыв
-          <svg class="reviews__icon" width="44" height="18" viewbox="0 0 44 18">
-            <use xlink:href="#revies__arrow"></use>
-          </svg>
-        </button>
-        <ul class="reviews__indicators">
-          <li class="reviews__indicator reviews__indicator--1">
-            <input type="radio" class="reviews__input" id="review_element1" value="1" name="review-indicator">
-            <label for="review_element1">Отзыв 1</label>
-          </li>
-          <li class="reviews__indicator reviews__indicator--2">
-            <input type="radio" class="reviews__input" id="review_element2" value="2" name="review-indicator" checked>
-            <label for="review_element2">Отзыв 2</label>
-          </li>
-          <li class="reviews__indicator reviews__indicator--3">
-            <input type="radio" class="reviews__input" id="review_element3" value="3" name="review-indicator">
-            <label for="review_element3">Отзыв 3</label>
-          </li>
-          <li class="reviews__indicator reviews__indicator--4">
-            <input type="radio" class="reviews__input" id="review_element4" value="4" name="review-indicator">
-            <label for="review_element4">Отзыв 4</label>
           </li>
         </ul>
       </div>
@@ -1050,10 +1001,13 @@
     </div>
   </footer>
 
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-1.4.1.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="js/slider-init.js"></script>
+
   <script src="js/menu-toggle.js"></script>
   <script src="js/footer-menu.js"></script>
-  <script src="js/promotion-slider.js"></script>
-  <script src="js/reviews-slider.js"></script>
   <script src="js/events-slider.js"></script>
 </body>
 </html>
