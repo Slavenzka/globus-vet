@@ -80,6 +80,7 @@
 }
 
 .large figure {
+  position: relative;
   margin: 0;
   padding: 0;
 }
@@ -88,12 +89,13 @@
   margin-top: 9px;
   margin-left: -18px;
   width: 454px;
-  height: 435px;
+  height: 445px;
 }
 
 .large figcaption {
-  margin-top: -37px;
-  margin-right: 50px;
+  position: absolute;
+  bottom: -20px;
+  right: 50px;
   padding-left: 40%;
   font-size: 18px;
   font-weight: 400;
@@ -144,11 +146,12 @@
   }
 
   .large figcaption {
-    margin-top: 15px;
-    margin-right: 0;
+    top: 0;
+    bottom: auto;
+    right: -220px;
     padding-left: 0;
-    width: 100%;
-    text-align: center;
+    width: 220px;
+    text-align: left;
   }
 }
 
