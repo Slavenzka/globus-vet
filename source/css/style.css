@@ -12,6 +12,8 @@ html {
 body {
   margin: 0;
   padding: 0;
+  font-size: 22px;
+  font-family: "Futura", "Arial", sans-serif;
   background-color: white; }
 
 a {
@@ -970,6 +972,7 @@ li.slider__shown {
   fill: #d12330; }
 
 .large figure {
+  position: relative;
   margin: 0;
   padding: 0; }
 
@@ -977,11 +980,12 @@ li.slider__shown {
   margin-top: 9px;
   margin-left: -18px;
   width: 454px;
-  height: 435px; }
+  height: 445px; }
 
 .large figcaption {
-  margin-top: -37px;
-  margin-right: 50px;
+  position: absolute;
+  bottom: -20px;
+  right: 50px;
   padding-left: 40%;
   font-size: 18px;
   font-weight: 400;
@@ -1033,11 +1037,12 @@ li.slider__shown {
     width: 317.8px;
     height: 304.5px; }
   .large figcaption {
-    margin-top: 15px;
-    margin-right: 0;
+    top: 0;
+    bottom: auto;
+    right: -220px;
     padding-left: 0;
-    width: 100%;
-    text-align: center; } }
+    width: 220px;
+    text-align: left; } }
 
 @media (max-width: 767px) {
   .large {

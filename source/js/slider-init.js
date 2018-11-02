@@ -2,7 +2,8 @@
 
 $(document).ready(function(){
   $('.reviews__list').slick({
-    infinite: true
+    infinite: true,
+    adaptiveHeight: true
   });
 });
 
