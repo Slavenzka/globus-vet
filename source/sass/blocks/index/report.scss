@@ -84,46 +84,51 @@
   height: 350px;
 }
 
+.report__frame {
+  width: 306px;
+  height: 200px;
+}
+
 .report__item--1 .report__img {
-  margin-top: -40px;
-  margin-left: -46px;
-  width: 402px;
-  height: 268px;
+  width: 306px;
+  height: 200px;
+  object-fit: cover;
+  object-position: 50% 0;
 }
 
 .report__item--2 .report__img {
-  margin-top: -310px;
-  margin-left: -311px;
-  width: 991px;
-  height: 747px;
+  width: 306px;
+  height: 350px;
+  object-fit: cover;
+  object-position: 100% 0;
 }
 
 .report__item--3 .report__img {
-  margin-top: -65px;
-  margin-left: -173px;
-  width: 640px;
-  height: 427px;
+  width: 306px;
+  height: 350px;
+  object-fit: cover;
+  object-position: 100% 0;
 }
 
 .report__item--4 .report__img {
-  margin-top: -47px;
-  margin-left: -67px;
-  width: 440px;
-  height: 250px;
+  width: 306px;
+  height: 200px;
+  object-fit: cover;
+  object-position: 50% 0;
 }
 
 .report__item--5 .report__img {
-  margin-top: -30px;
-  margin-left: -138px;
-  width: 453px;
-  height: 303px;
+  width: 306px;
+  height: 200px;
+  object-fit: cover;
+  object-position: 50% 0;
 }
 
 .report__item--6 .report__img {
-  margin-top: -55px;
-  margin-left: -57px;
-  width: 428px;
-  height: 479px;
+  width: 306px;
+  height: 350px;
+  object-fit: cover;
+  object-position: 50% 0;
 }
 
 @media (max-width: $width__tablet-only) {
