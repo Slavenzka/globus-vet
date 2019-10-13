@@ -9,6 +9,16 @@
 }
 
 @font-face {
+  font-family: "Gotham";
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+  src:
+    url("../fonts/GothamPro-Light.woff2") format("woff2"),
+    url("../fonts/GothamPro-Light.woff") format("woff");
+}
+
+@font-face {
   font-family: "Futura";
   font-weight: 400;
   font-display: swap;
@@ -16,6 +26,16 @@
   src:
     url("../fonts/FuturaPTBook.woff2") format("woff2"),
     url("../fonts/FuturaPTBook.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gotham";
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+  src:
+    url("../fonts/GothamPro.woff2") format("woff2"),
+    url("../fonts/GothamPro.woff") format("woff");
 }
 
 @font-face {
@@ -29,6 +49,16 @@
 }
 
 @font-face {
+  font-family: "Gotham";
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+  src:
+    url("../fonts/GothamPro-Medium.woff2") format("woff2"),
+    url("../fonts/GothamPro-Medium.woff") format("woff");
+}
+
+@font-face {
   font-family: "Futura";
   font-weight: 600;
   font-display: swap;
@@ -39,6 +69,16 @@
 }
 
 @font-face {
+  font-family: "Gotham";
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+  src:
+    url("../fonts/GothamPro-Bold.woff2") format("woff2"),
+    url("../fonts/GothamPro-Bold.woff") format("woff");
+}
+
+@font-face {
   font-family: "Futura";
   font-weight: 700;
   font-display: swap;
@@ -46,4 +86,14 @@
   src:
     url("../fonts/FuturaPTBold.woff2") format("woff2"),
     url("../fonts/FuturaPTBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gotham";
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+  src:
+    url("../fonts/GothamPro-Bold.woff2") format("woff2"),
+    url("../fonts/GothamPro-Bold.woff") format("woff");
 }

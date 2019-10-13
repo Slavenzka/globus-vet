@@ -268,9 +268,6 @@
                       <source type="image/webp" srcset="img/promotion__xray-pic@1x.webp 1x, img/promotion__xray-pic@2x.webp 2x">
                       <img class="large__img" src="img/promotion__xray-pic@1x.png" srcset="img/promotion__xray-pic@1x.png 1x, img/promotion__xray-pic@2x.png 2x" alt="Фотография рентгеновского аппарата GIERTH HFX 90 V">
                     </picture>
-                    <figcaption>
-                      Рентгеновский аппарат GIERTH HFX 90 V
-                    </figcaption>
                   </figure>
                 </a>
               </li>
@@ -526,15 +523,20 @@
           Оставьте свои контакты и мы пришлём вам полный каталог оборудования на электронную почту!
         </p>
         <form action="#">
-          <input class="order__email" type="email" placeholder="Ваш e-mail" required>
-          <input class="order__phone" type="tel" placeholder="Ваш телефон">
-          <button class="button order__button" type="submit">
+          <input class="order__field order__email" type="email" placeholder="Ваш e-mail" required>
+          <input class="order__field order__phone" type="tel" placeholder="Ваш телефон">
+          <button data-captcha class="button order__button" type="button" type="submit">
             Получить каталог
           </button>
+          <div
+            class="g-recaptcha"
+            data-sitekey="6LcoUJoUAAAAAC5OmIYuFfetRbpZiRDcYP8u1YPs"
+            style="margin-top: 25px;"
+          />
         </form>
       </div>
     </section>
-    <section class="catalog-promo">
+    <!-- <section class="catalog-promo">
       <h2 class="visually-hidden">
         Ссылки на разделы каталога
       </h2>
@@ -546,13 +548,7 @@
           <p class="catalog-promo__details">
             Лучшее ветеринарное оборудование для рентгенологии
           </p>
-          <picture>
-            <source type="image/webp" srcset="img/catalog-promo__item--1@1x.webp 1x, img/catalog-promo__item--1@2x.webp 2x">
-            <img class="catalog-promo__img" src="img/catalog-promo__item--1@1x.jpg" srcset="img/catalog-promo__item--1@1x.jpg 1x, img/catalog-promo__item--1@2x.jpg 2x" alt="Фотография оборудования для рентгена">
-          </picture>
-          <a href="#" class="button catalog-promo__link">
-            Показать каталог
-          </a>
+          <img class="catalog-promo__img" src="img/img1.png" alt="Фотография оборудования для рентгена">
         </li>
         <li class="catalog-promo__item catalog-promo__item--2">
           <h3 class="catalog-promo__title">
@@ -561,13 +557,7 @@
           <p class="catalog-promo__details">
             Оборудование для ветеринарной тонометрии от ведущих производителей
           </p>
-          <picture>
-            <source type="image/webp" srcset="img/catalog-promo__item--2@1x.webp 1x, img/catalog-promo__item--2@2x.webp 2x">
-            <img class="catalog-promo__img" src="img/catalog-promo__item--2@1x.jpg" srcset="img/catalog-promo__item--2@1x.jpg 1x, img/catalog-promo__item--2@2x.jpg 2x" alt="Фотография оборудования для тонометрии">
-          </picture>
-          <a href="#" class="button catalog-promo__link">
-            Показать каталог
-          </a>
+          <img class="catalog-promo__img" src="img/img2.png" alt="Фотография оборудования для тонометрии">
         </li>
         <li class="catalog-promo__item catalog-promo__item--3">
           <h3 class="catalog-promo__title">
@@ -576,13 +566,7 @@
           <p class="catalog-promo__details">
             Проведение анализов, изучение различных процессов в организме животного, испытание новых препаратов
           </p>
-          <picture>
-            <source type="image/webp" srcset="img/catalog-promo__item--3@1x.webp 1x, img/catalog-promo__item--3@2x.webp 2x">
-            <img class="catalog-promo__img" src="img/catalog-promo__item--3@1x.jpg" srcset="img/catalog-promo__item--3@1x.jpg 1x, img/catalog-promo__item--3@2x.jpg 2x" alt="Фотография лабораторного оборудования">
-          </picture>
-          <a href="#" class="button catalog-promo__link">
-            Показать каталог
-          </a>
+          <img class="catalog-promo__img" src="img/img3.png" alt="Фотография лабораторного оборудования">
         </li>
         <li class="catalog-promo__item catalog-promo__item--4">
           <h3 class="catalog-promo__title">
@@ -591,13 +575,6 @@
           <p class="catalog-promo__details">
             Оборудование, бывшее в употреблении по&nbsp;очень выгодным ценам!
           </p>
-          <picture>
-            <source type="image/webp" srcset="img/catalog-promo__item--4@1x.webp 1x, img/catalog-promo__item--4@1x.webp 2x">
-            <img class="catalog-promo__img" src="img/catalog-promo__item--4@1x.jpg" srcset="img/catalog-promo__item--4@1x.jpg 1x, img/catalog-promo__item--4@1x.jpg 2x" alt="Фотография оборудования б/у">
-          </picture>
-          <a href="#" class="button catalog-promo__link">
-            Показать каталог
-          </a>
         </li>
       </ul>
     </section>
@@ -630,7 +607,7 @@
             Предыдущее событие
           </button>
           <ul class="events__list">
-            <li class="events__item events__item--selected">
+            <li class="events__item">
               <figure class="events__illustration">
                 <div class="events__target">
                   <picture>
@@ -767,7 +744,7 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
   </main>
 
   <footer class="footer-main">
@@ -1001,9 +978,31 @@
   <script src="js/jquery-migrate-1.4.1.min.js"></script>
   <script src="plugins/slick/slick.min.js"></script>
   <script src="js/slider-init.js"></script>
-
   <script src="js/menu-toggle.js"></script>
   <script src="js/footer-menu.js"></script>
   <script src="js/events-slider.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+    async defer></script>
+  <script>
+    let captchaTrigger = document.querySelector('[data-captcha]');
+    let fields = document.querySelectorAll('.order__field');
+
+    var onloadCallback = () => {
+      captchaTrigger.addEventListener('click', evt => {
+        let formValidity = true;
+        fields.forEach(item => {
+          console.log(item.validity.valid);
+          if (!item.validity.valid) {
+            formValidity = false;
+          }
+        });
+        if (formValidity) {
+          grecaptcha.render(document.querySelector('.g-recaptcha'), {
+            'sitekey' : '6LcoUJoUAAAAAC5OmIYuFfetRbpZiRDcYP8u1YPs'
+          });
+        }
+      });
+    }
+  </script>
 </body>
 </html>
