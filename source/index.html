@@ -525,7 +525,7 @@
         <form data-form-submit action="#">
           <input class="order__field order__email" type="email" placeholder="Ваш e-mail" required>
           <input class="order__field order__phone" type="tel" placeholder="Ваш телефон">
-          <button data-captcha data-callback='onSubmit' class="button order__button g-recaptcha" type="button" type="submit">
+          <button data-captcha class="button order__button" type="button" type="submit">
             Получить каталог
           </button>
           <div
@@ -1002,7 +1002,8 @@
         });
         if (formValidity) {
           grecaptcha.render(document.querySelector('.g-recaptcha'), {
-            'sitekey' : '6LfOWb0UAAAAAJhDc00vRGIZbDU7azc2kC_I39ih'
+            'sitekey' : '6LfOWb0UAAAAAJhDc00vRGIZbDU7azc2kC_I39ih',
+            'callback': onSubmit
           });
         }
       });
