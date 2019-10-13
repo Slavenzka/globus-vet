@@ -522,10 +522,10 @@
         <p class="order__instruction">
           Оставьте свои контакты и мы пришлём вам полный каталог оборудования на электронную почту!
         </p>
-        <form action="#">
+        <form data-form-submit action="#">
           <input class="order__field order__email" type="email" placeholder="Ваш e-mail" required>
           <input class="order__field order__phone" type="tel" placeholder="Ваш телефон">
-          <button data-captcha class="button order__button" type="button" type="submit">
+          <button data-captcha data-callback='onSubmit' class="button order__button g-recaptcha" type="button" type="submit">
             Получить каталог
           </button>
           <div
@@ -984,14 +984,18 @@
   <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
     async defer></script>
   <script>
-    let captchaTrigger = document.querySelector('[data-captcha]');
-    let fields = document.querySelectorAll('.order__field');
+    let form = document.querySelector('[data-form-submit]');
+    let captchaTrigger = form.querySelector('[data-captcha]');
+    let fields = form.querySelectorAll('.order__field');
+
+    function onSubmit(token) {
+     console.log('Success!');
+   }
 
     var onloadCallback = () => {
       captchaTrigger.addEventListener('click', evt => {
         let formValidity = true;
         fields.forEach(item => {
-          console.log(item.validity.valid);
           if (!item.validity.valid) {
             formValidity = false;
           }
