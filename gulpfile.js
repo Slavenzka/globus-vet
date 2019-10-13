@@ -33,6 +33,11 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
+gulp.task("style2", function() {
+  gulp.src("source/css/new-font.css")
+    .pipe(server.stream());
+});
+
 gulp.task("normalize-min", function() {
   gulp.src("source/css/normalize.css")
   .pipe(minify())
